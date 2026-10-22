@@ -1,6 +1,7 @@
+
 # NUMBER GUESSING GAME
 
-A console-based Python program where the computer picks a secret number between 1 and 100 and the player tries to guess it. Built during Month 2 of my Python Development internship at **Arch Technologies**.
+A console-based Python program where the computer picks a secret number between 1 and 100 and the player tries to guess it. The program gives a "too high" or "too low" hint after every guess. Built during Month 2 of my Python Development internship at **Arch Technologies**.
 
 **Repository:** https://github.com/libra-mtanveer316/arch-technologies-python-developer-internship-month2
 
@@ -39,7 +40,7 @@ Computer picks a secret number (random.randint(1, 100))
 Ask the player for a guess
   |
   v
-Not a number, or outside 1-100? -> show a message and ask again
+Not a whole number, or outside 1-100? -> show a message and ask again
   |
   v
 Count the attempt
@@ -70,6 +71,7 @@ anything else -> print goodbye message and exit
 | 4 | Conditional logic (`if` / `elif` / `else`) |
 | 5 | f-strings |
 | 6 | User input handling and validation |
+| 7 | `try` / `except` |
 
 ---
 
@@ -83,6 +85,8 @@ Enter your guess: 50
 Too high! Try a smaller number.
 Enter your guess: abc
 That's not a valid number, try again.
+Enter your guess: 150
+Please enter a number between 1 and 100.
 Enter your guess: 25
 Too high! Try a smaller number.
 Enter your guess: 10
@@ -94,15 +98,6 @@ You got it in 4 attempts.
 Do you want to play again? (yes/no): no
 Thanks for playing, bye!
 ```
-
----
-
-## Notes
-
-- `random.randint(1, 100)` is used because it includes both 1 and 100, so every number in the range has a fair chance of being picked.
-- Input is checked with `.isdigit()` before converting to an integer, so typing letters doesn't crash the program.
-- Invalid guesses (letters or numbers outside 1-100) are not counted as attempts, so the attempt counter only reflects real guesses.
-- The play-again answer is cleaned with `.strip().lower()` so `Yes`, `yes`, or a stray space all behave the same way.
 
 ---
 
