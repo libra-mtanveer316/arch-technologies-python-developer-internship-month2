@@ -39,7 +39,7 @@ Show menu and ask for a choice
   v
 1 -> show current balance
 2 -> ask amount -> deposit (greater than 0, at most 2 decimal places)
-3 -> ask amount -> withdraw (greater than 0, at most 2 decimal places, not more than balance)
+3 -> ask amount -> withdraw (greater than 0, at most 2 decimal places not more than balance)
 4 -> print goodbye message and exit
 anything else -> "Invalid choice" message
   |
