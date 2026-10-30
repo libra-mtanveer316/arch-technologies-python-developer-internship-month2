@@ -45,7 +45,7 @@ class ATMController:
             amount = float(value)
         except ValueError:
             return None
-        if not math.isfinite(amount):   # rejects nan and inf
+        if not math.isfinite(amount) or amount > 1_000_000_000:   # rejects nan, inf and huge numbers
             return None
         return amount
 
