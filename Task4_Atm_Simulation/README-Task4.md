@@ -117,7 +117,6 @@ Thank you for using the ATM. Goodbye!
 | File | Purpose |
 |------|---------|
 | `task4_atm_simulation.py` | Main program — run this |
-| `requirements.txt` | Dependency list (none — standard library only) |
 | `README-Task4.md` | This file |
 
 ## Author
